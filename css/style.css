@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0 auto;
+    max-width: 1400px;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#grid-container{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat (4, auto);
+    grid-template-areas: "topp" "hovedomraade" "sidebar" "baan";
+}
+
+#logo{
+    text-decoration: none; /*får vekk understrek*/
+    font-size: 20px;
+    font-weight: 600; /*tykkelsen på skriften*/
+    color:black;
+}
+
+
+header{
+    text-align: center;
+}
+
+header nav{
+    text-transform: uppercase; /*store bokstaver*/
+}

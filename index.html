@@ -3,33 +3,42 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="utf-8">
+        <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
+        <link href="css/font/css/fontawesome.css" rel="stylesheet">
+        <link href="css/font/css/brands.css" rel="stylesheet">
+        <link href="css/font/css/solid.css" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css" type="text/css">
         <title> Forside </title>
     </head>
     <body>
+        <div id="grid-container">
         <header>
-               <span>
-                 <a href="#" id="logo">CHICO</a> <!--Logo-->
-               </span>
-               <nav>
-                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="produkt.html">Products</a></li>
-                    <li><a href="#">About</a></li>
-                 </ul>
-               </nav>
+                <nav>
+                    <a href="#" id="logo">CHICO</a> <!--Logo-->
+                    <div>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <i class="fa-regular fa-user"></i>
+                    </div>
+                    <ul class="navbar">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="produkt.html">Products</a></li>
+                        <li><a href="#">About</a></li>
+                    </ul>
+                </nav>
+                <i id="ham" class="fa-solid fa-bars"></i>
         </header>
         <main>
             <section>
-                <article>
+                <article class="flex-section left">
                     <img src="https://placehold.co/600x400" alt="">
                     <a href="#" class="read-more-btn">Boots</a>
                 </article>
-                <article>
+                <article class="flex-section middle">
                     <img src="https://placehold.co/600x400" alt="">
                     <a href="#" class="read-more-btn">Sneakers</a>
                 </article>
-                <article>
+                <article class="flex-section right">
                     <img src="https://placehold.co/600x400" alt="">
                     <a href="#" class="read-more-btn">Tøfler</a>
                 </article>
@@ -37,7 +46,7 @@
         </main>
         <section>
             <h3> Oppdater høstgarderoben hos oss!</h3>
-            <a href="#" class="read-more-btn"> Shop now!</a>
+            <a href="produkt.html" class="read-more-btn"> Shop now!</a>
         </section>
         <footer>
             <ul id="social-icons">
@@ -45,6 +54,20 @@
                 <li>I</li>
             </ul>
         </footer>
+        </div>
+        <script>
+
+            let x = document.querySelector(".navbar")
+            
+            document.getElementById("ham").addEventListener("click", (e) =>{
+                if (x.className === "navbar"){
+                    x.className += " responsive";
+                } else {
+                    x.className = "navbar"
+                }
+            })
+
+        </script>
     </body>
 </html>
 

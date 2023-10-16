@@ -3,6 +3,10 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="utf-8">
+        <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
+        <link href="css/font/css/fontawesome.css" rel="stylesheet">
+        <link href="css/font/css/brands.css" rel="stylesheet">
+        <link href="css/font/css/solid.css" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css" type="text/css">
         <title> Hanlekurv </title>
     </head>
@@ -12,10 +16,15 @@
                <span>
                  <a href="index.html" id="logo">CHICO</a> <!--Logo-->
                </span>
+               <div>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <i class="fa-regular fa-user"></i>
+               </div>
                <nav>
                  <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="#">Products</a></li>
+                    <li><a href="produkt.html">Products</a></li>
                     <li><a href="#">About</a></li>
                  </ul>
                </nav>
@@ -47,6 +56,19 @@
                 <li>I</li>
             </ul>
         </footer>
+        <script>
+
+            let x = document.querySelector(".navbar")
+            
+            document.getElementById("ham").addEventListener("click", (e) =>{
+                if (x.className === "navbar"){
+                    x.className += " responsive";
+                } else {
+                    x.className = "navbar"
+                }
+            })
+
+        </script>
     </body>
 
 

@@ -1,33 +1,131 @@
-*{
-    box-sizing: border-box;
-}
 
 body{
-    margin: 0 auto;
-    max-width: 1400px;
-    width: 100%;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(61, 54, 43);
 }
 
 #grid-container{
-    display:grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat (4, auto);
-    grid-template-areas: "topp" "hovedomraade" "sidebar" "baan";
+    display: grid;
+    grid-template-areas: "header" "main" "footer";
+}
+
+header, main, footer{
+    padding: 1rem;
 }
 
 #logo{
+    display: flex;
     text-decoration: none; /*får vekk understrek*/
-    font-size: 20px;
-    font-weight: 600; /*tykkelsen på skriften*/
-    color:black;
+    justify-content: center;
+    font-size: calc(1.5em + 1.5vw);
+    font-weight: 500; /*tykkelsen på skriften*/
+    color:rgb(205,193,178);
 }
 
 
 header{
-    text-align: center;
+    color:rgb(205,193,178);
 }
 
-header nav{
+header nav div{ /*ikonene i høyre hjørne*/
+    display: flex;
+    justify-content: right;
+    position: relative;
+    gap: 0.5rem;
+    padding: 1rem 1rem 0rem 0;
+}
+
+#ham{
+    display: flex;
+    justify-content: left;
+    font-size: calc(1.5em + 1.5vw);
+    padding: 0rem 0rem 0rem 1rem;
+}
+
+header nav ul{ /*home products about*/
+    list-style-type: none; /*tar vekk punktene i listen*/
+}
+
+header nav a{
+    display: flex;
+    justify-content: space-between;
     text-transform: uppercase; /*store bokstaver*/
+    color:rgb(205,193,178);
+} 
+
+.navbar{
+    display: none;
+}
+
+.responsive{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: #a89e9e;
+    top: 98px;
+    width:100%;
+    list-style: none;
+    padding: 0;
+}
+
+.responsive a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    padding:1rem;
+}
+
+main{
+    grid-area: main;
+}
+
+main section article img{
+    width:100%;
+}
+
+.read-more-btn{
+    display: flex;
+    background-color: rgb(151, 78, 84);
+    color:rgb(205,193,178);
+    text-decoration: none;
+    justify-content: center;
+}
+
+section h3{
+    color:rgb(205,193,178);
+}
+
+
+footer ul li{
+    color:rgb(205,193,178);
+    list-style-type: none;
+}
+
+
+@media only screen and (min-width:600px){
+
+    #grid-container{
+        grid-template-areas: "header" "main" "footer";
+    }
+
+    .navbar{
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        list-style: none;
+        justify-content: center;
+    }
+
+    #ham, .fa-magnifying-glass{
+        display: none;
+    }
+
+    .flex-section{
+        display: flex;
+        justify-content: left;
+        width: 35%;
+    }
+
+
+    
 }

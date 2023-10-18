@@ -17,8 +17,14 @@
                     <a href="index.html" id="logo">CHICO</a> <!--Logo-->
                 </span>
                 <nav>
-                    <ul>
-                        <li><a href="#">Home</a></li>
+                    <div>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <i class="fa-regular fa-user"></i>
+                    </div>
+                    <i id="ham" class="fa-solid fa-bars"></i>
+                    <ul id="produkt-navbar">
+                        <li><a href="index.html">Home</a></li>
                         <li><a href="#">Products</a></li>
                         <li><a href="handlekurv.html">Handlekurv</a></li>
                     </ul>
@@ -28,30 +34,22 @@
                 <h1>Produkter</h1>
                 <section>
                     <article>
-                        <img src="https://placehold.co/600x400" alt="">
+                        <img src="img/hvit boot.jpg" alt="">
                         <h3>Navn på skoen</h3>
                         <a href="#" class="read-more-btn"> Sko 1</a>
                     </article>
                     <article>
-                        <img src="https://placehold.co/600x400" alt="">
+                        <img src="img/brun boot.jpg" alt="">
                         <h3>Navn på skoen</h3>
                         <a href="#" class="read-more-btn"> Sko 2</a>
                     </article>
                     <article>
-                        <img src="https://placehold.co/600x400" alt="">
+                        <img src="img/to brune boots.jpg" alt="">
                         <h3>Navn på skoen</h3>
                         <a href="#" class="read-more-btn"> Sko 3</a>
                     </article>
                     <article>
-                        <img src="https://placehold.co/600x400" alt="">
-                        <h3>Navn på skoen</h3>
-                    </article>
-                    <article>
-                        <img src="https://placehold.co/600x400" alt="">
-                        <h3>Navn på skoen</h3>
-                    </article>
-                    <article>
-                        <img src="https://placehold.co/600x400" alt="">
+                        <img src="img/svarte boots.jpg" alt="">
                         <h3>Navn på skoen</h3>
                     </article>
                 </section>
@@ -65,21 +63,21 @@
                 </ul>
             </aside>
             <footer> 
-                <ul id="social-icons">
-                    <li>F</li>
-                    <li>I</li>
+                <ul>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i> 
                 </ul>
             </footer>
         </div>
         <script>
 
-            let x = document.querySelector(".navbar")
+            let x = document.querySelector(".produkt-navbar")
             
             document.getElementById("ham").addEventListener("click", (e) =>{
-                if (x.className === "navbar"){
+                if (x.className === "produktnavbar"){
                     x.className += " responsive";
                 } else {
-                    x.className = "navbar"
+                    x.className = "produktnavbar"
                 }
             })
 

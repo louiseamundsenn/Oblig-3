@@ -55,7 +55,9 @@ header nav a{
 
 .navbar{
     display: none;
+    text-decoration: none;
 }
+
 
 .responsive{
     display: flex;
@@ -75,30 +77,65 @@ header nav a{
     padding:1rem;
 }
 
-main{
-    grid-area: main;
+h1{
+    color: rgb(205,193,178);
 }
 
+main{
+    grid-area: main;
+    padding: 0rem 0rem 1rem 0rem;
+
+}
+
+
+
 main section article img{
-    width:100%;
+   display: flex;
+   width:32%;
+   height: 180px;  
+}
+
+section article{
+    display: flex;
+    justify-content: space-around;
+}
+
+.read-btn{
+    display: flex;
+    color: rgb(205,193,178);
+    text-decoration: none;
+   
 }
 
 .read-more-btn{
     display: flex;
-    background-color: rgb(151, 78, 84);
-    color:rgb(205,193,178);
+    background-color:rgb(205,193,178);
+    color:rgb(70, 59, 46);
     text-decoration: none;
     justify-content: center;
+    padding: 2rem;
+    margin: 0rem 4rem 4rem;
 }
 
 section h3{
+    display: flex;
+    justify-content: center;
     color:rgb(205,193,178);
 }
 
+section img{
+    display: flex;
+    justify-content:space-around;
+    width: 200px;
+}
 
-footer ul li{
+
+footer{
+    display: flex;
     color:rgb(205,193,178);
-    list-style-type: none;
+    justify-content: center;
+    gap: 1.5rem;
+    font-size: calc(1.5em + 1.5vw);
 }
 
 
@@ -108,12 +145,23 @@ footer ul li{
         grid-template-areas: "header" "main" "footer";
     }
 
+    #logo{
+        font-size: 100px;
+        padding: 3rem;
+    }
+
+    header nav div{
+        font-size: xx-large;
+    }
+
+
     .navbar{
         display: flex;
+        text-decoration: none;
         flex-direction: row;
         gap: 2rem;
-        list-style: none;
         justify-content: center;
+        font-size: calc(1em + 1vw);
     }
 
     #ham, .fa-magnifying-glass{
@@ -125,7 +173,37 @@ footer ul li{
         justify-content: left;
         width: 35%;
     }
-
-
     
+    main{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        padding: 2rem;
+        margin: 1rem;
+    }
+
+    main section article img{
+        display: flex;
+        width:large;
+        height: max-content;
+    }
+
+    main section article a{
+        display: flex;
+        font-size: 85px;
+        font-weight: 500;
+    }
+
+    section h3{
+        display: flex;
+        font-size: 70px;
+        font-weight: normal;
+    }
+
+    .read-more-btn{
+        display: flex;
+        font-size:110px;
+    }
+
 }

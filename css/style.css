@@ -130,6 +130,28 @@ section img{
 }
 
 
+main aside{
+    background-color:rgb(205,193,178);
+}
+
+aside{
+    display: none;
+}
+
+aside h3{
+    display: flex;
+    justify-content: center;
+}
+
+.black-btn{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: rgb(61, 54, 43);
+    background-color:rgb(203, 160, 106);
+    padding: 1.5rem;
+}
+
 footer{
     display: flex;
     color:rgb(205,193,178);
@@ -204,6 +226,34 @@ footer{
     .read-more-btn{
         display: flex;
         font-size:110px;
+    }
+
+    aside{
+        display: flex;
+        text-decoration: none;
+        justify-content: center;
+        background-color: rgb(205,193,178);
+        padding: 5rem;
+
+    }
+
+    aside h3{
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: 1150px;
+    }
+
+    aside p{
+        display: flex;
+        justify-content: left;
+    }
+
+    aside a{
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: 1288px;
     }
 
 }

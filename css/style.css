@@ -1,7 +1,216 @@
+*{
+    box-sizing: border-box;
+}
 
-body{
+#logo{ /*ALLE SIDENE*/
+    display: grid;
+    text-decoration: none; 
+    justify-content: center;
+    font-size: calc(1.5em + 1.5vw);
+    font-weight: 500;
+    color: rgb(205,193,178);
+    padding: 1rem;
+}
+
+header nav div{ /*FORSIDEN OG PRODUKTSIDEN*/
+    display: flex;
+    justify-content: right;
+    position: relative;
+    gap: 0.5rem;
+    padding: 1rem 1rem 0rem 0;
+    color: rgb(205,193,178);
+}
+
+.produkt-navbar{ /*PRODUKTSIDE*/
+    display: none;
+    text-decoration: none;
+}
+
+#ham{ /*FORSIDEN OG PRODUKTSIDEN*/
+    display: flex;
+    justify-content: left;
+    font-size:1.8rem;
+    padding: 0rem 0rem 0rem 1rem;
+    color: rgb(205,193,178);
+}
+
+header nav p{ /*PRODUKTSIDE*/
+    color: rgb(205,193,178);
+    text-decoration-line: underline;
+}
+
+.navbar{ /*FORSIDEN*/
+    display: none;
+    text-decoration: none;
+}
+
+.responsive{ /*FORSIDE OG PRODUKTSIDE*/
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: #a89e9e;
+    width:100%;
+    list-style: none;
+    padding: 0;
+}
+
+.responsive a{ /*FORSIDEN*/
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    padding:1rem;
+}
+
+h1{ /*PRODUKTSIDEN*/
+    color: rgb(205,193,178);
+    text-decoration-line: underline;
+}
+
+header div a{ /*PRODUKTSIDE*/
+    background-color: rgb(11, 19, 19);
+    color: rgb(205,193,178);
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.pynt-produktside{
+    background-color: aqua;
+}
+
+
+main{ /*ALLE SIDENE*/
+    width: 100%;
+    margin: 0 auto;
+    padding: 0.5rem;
+}
+
+.flex-container{ /*FORSIDEN*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+article{ /*USIKKER*/
+    flex: 1;
+
+}
+
+.forside-bilder{ /*FORSIDEN*/
+    max-width: 100%;
+    height: auto;
+}
+
+.produkter{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.produktside-article{
+    width: 50%;
+    text-align: center;
+
+}
+
+.produktside-bilder{
+    max-width: 100%;
+    height: auto;
+    width: 90%;
+}
+
+
+.read-btn{ /*FORSIDEN*/
+    display: flex;
+    color: rgb(205,193,178);
+    text-decoration: none;
+    justify-content: center;
+    
+}
+
+main section h3{ /*FORSIDEN*/
+    display: flex;
+    justify-content: center;
+    color:rgb(205,193,178);
+}
+
+main section article h3{
+    display: flex;
+    flex
+}
+
+.read-more-btn{ /*ALLE SIDENE*/
+    display: flex;
+    background-color:rgb(205,193,178);
+    color:rgb(70, 59, 46);
+    text-decoration: none;
+    justify-content: center;
+    padding: 2rem;
+    margin: 0rem 4rem 4rem;
+    border-radius:50%;
+}
+
+.some-bilder{ /*FORSIDEN*/
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+}
+
+main div{ /*FORSIDEN*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+footer{ /*ALLE SIDENE*/
+    display: flex;
+    color:rgb(205,193,178);
+    justify-content: center;
+    gap: 1.5rem;
+    font-size: calc(1.5em + 1.5vw);
+}
+
+
+
+
+
+/*@media only screen and (min-width:600px)*/
+
+    #grid-container{ /*ALLE SIDENE*/
+        display: grid;
+        grid-template-areas: "header header header"
+                            "main main main"
+                            "footer footer footer";
+        grid-row-gap: 10px;
+        grid-column-gap: 10px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0fr 3fr 1fr;
+    }
+
+
+    header{ /*ALLE SIDENE*/
+      grid-area: header;
+    }
+
+    main{ /*ALLE SIDENE*/
+        grid-area: main;
+    }
+
+    footer{ /*ALLE SIDENE*/
+        grid-area: footer;
+    }
+
+}
+
+
+
+
+/*
+body{ /*FORSIDEN
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(61, 54, 43);
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 #grid-container{
@@ -15,10 +224,12 @@ header, main, footer{
 
 #logo{
     display: flex;
-    text-decoration: none; /*får vekk understrek*/
+    text-decoration: none; /*får vekk understre
     justify-content: center;
     font-size: calc(1.5em + 1.5vw);
-    font-weight: 500; /*tykkelsen på skriften*/
+    font-weight: 500;
+    
+    /*tykkelsen på skriften
     color:rgb(205,193,178);
 }
 
@@ -28,7 +239,7 @@ header{
 
 }
 
-header div{ /* denne tilhører handlekurv siden*/
+header div{ /* denne tilhører handlekurv siden
     display: flex;
     justify-content: right;
     position: relative;
@@ -36,7 +247,7 @@ header div{ /* denne tilhører handlekurv siden*/
     padding: 1rem 1rem 0rem 0;
 }
 
-header nav div{ /*ikonene i høyre hjørne*/
+header nav div{ /*ikonene i høyre hjørne
     display: flex;
     justify-content: right;
     position: relative;
@@ -51,8 +262,8 @@ header nav div{ /*ikonene i høyre hjørne*/
     padding: 0rem 0rem 0rem 1rem;
 }
 
-header nav ul{ /*home products about*/
-    list-style-type: none; /*tar vekk punktene i listen*/
+header nav ul{ /*home products about
+    list-style-type: none; /*tar vekk punktene i listen
     display: none;
     text-decoration: none;
 }
@@ -60,7 +271,7 @@ header nav ul{ /*home products about*/
 header nav a{
     display: flex;
     justify-content: space-between;
-    text-transform: uppercase; /*store bokstaver*/
+    text-transform: uppercase; /*store bokstaver
     color:rgb(205,193,178);
 } 
 
@@ -98,18 +309,18 @@ main{
 
 }
 
-.flex-con{
+/*.flex-con{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     padding: 2rem 6rem 0rem 6rem;
-}
+}*/
 
 /*main section article img{
    display: flex;
    width:32%;
    height: 180px;  
-}*/
+}
 
 
 .read-btn{
@@ -128,6 +339,8 @@ main{
     padding: 2rem;
     margin: 0rem 4rem 4rem;
 }
+
+
 
 
 section h3{
@@ -167,10 +380,46 @@ aside h3{
 }
 
 
-.flexContainer{
-    display: flex;
-    flex-direction: row;
-    padding: 4rem;
+.svarte-boots{ /*bilde over footer
+    
+    width:120px;
+    position: absolute;
+    left: 85px;
+    top: 1000px;
+    height: 213px;
+}
+
+.catwalk{ /*bilde over footer
+   
+    width: 120px;
+    position: absolute;
+    left: 218px;
+    top: 1000px;
+}
+
+.hvit-sneakers-bil{
+   
+    width: 120px;
+    position: absolute;
+    left: 350px;
+    top: 1000px;
+}
+
+.bella{
+   
+    width: 120px;
+    position: absolute;
+    left: 480px;
+    top: 1000px;
+}
+
+.ugg-tasman{
+    
+    width: 120px;
+    position: absolute;
+    left: 615px;
+    top: 1000px;
+    height: 213px;
 }
 
 footer{
@@ -285,3 +534,4 @@ footer{
     }
 
 }
+*/

@@ -22,7 +22,7 @@
                </div>
                <i id="arrow-left" class="fa-solid fa-arrow-left"></i>
                <nav>
-                 <ul>
+                 <ul class="handlekurv-navbar">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="produkt.html">Products</a></li>
                     <li><a href="#">About</a></li>
@@ -58,13 +58,13 @@
         </footer>
         <script>
 
-            let x = document.querySelector(".fa-solid fa-arrow-left")
+            let x = document.querySelector(".handlekurv-navbar")
             
             document.getElementById("arrow-left").addEventListener("click", (e) =>{
-                if (x.className === "fa-solid fa-arrow-left"){
+                if (x.className === "handlekurv-navbar"){
                     x.className += " responsive";
                 } else {
-                    x.className = "fa-solid fa-arrow-left"
+                    x.className = "handlekurv-navbar"
                 }
             })
 

@@ -28,42 +28,39 @@
                         <li><a href="#">MERKER</a></li>
                         <li><a href="#">OM OSS</a></li>
                         <li><a href="#">KONTAKT OSS</a></li>
-                        <li><a href="handlekurv.html">Handlekurv</a></li>
+                        <li><a href="handlekurv.html">HANDLEKURV</a></li>
                     </ul>
+                    <p href="index.html">Hjem/Produkter</p>
                 </nav>
-            </header>
-            <main>
                 <h1>Produkter</h1>
-                <section class="flex-container">
-                    <article>
-                        <img src="img/hvit-boot.jpg" alt="#">
+                <div>
+                    <a href="#" class="filter-btn">Filter</a>
+                </div>
+            </header>
+            <main class="pynt-produktside">
+                <section class="produkter">
+                    <article class="produktside-article">
+                        <img src="img/hvit-boot.jpg" alt="#" class="produktside-bilder">
                         <h3>Navn på skoen</h3>
-                        <a href="#" class="read-more-btn"> Sko 1</a>
+                        <a href="#" class="produkt-btn"> Sko 1</a>
                     </article>
-                    <article>
-                        <img src="img/brun-boot.jpg" alt="#">
+                    <article class="produktside-article">
+                        <img src="img/brun-boot.jpg" alt="#" class="produktside-bilder">
                         <h3>Navn på skoen</h3>
-                        <a href="#" class="read-more-btn"> Sko 2</a>
+                        <a href="#" class="produkt-btn"> Sko 2</a>
                     </article>
-                    <article>
-                        <img src="img/to-brune-boots.jpg" alt="#">
+                    <article class="produktside-article">
+                        <img src="img/to-brune-boots.jpg" alt="#" class="produktside-bilder">
                         <h3>Navn på skoen</h3>
-                        <a href="#" class="read-more-btn"> Sko 3</a>
+                        <a href="#" class="produkt-btn"> Sko 3</a>
                     </article>
-                    <article>
-                        <img src="img/svarte-boots.jpg" alt="#">
+                    <article class="produktside-article">
+                        <img src="img/svarte-boots.jpg" alt="#" class="produktside-bilder">
                         <h3>Navn på skoen</h3>
+                        <a href="#" class="produkt-btn">Sko 4</a>
                     </article>
                 </section>
             </main>
-            <aside>
-                <h3>Aside element</h3>
-                <ul>
-                    <li>Boots</li>
-                    <li>Sneakers</li>
-                    <li>Tøfler</li>
-                </ul>
-            </aside>
             <footer> 
                 <ul>
                     <i class="fa-brands fa-facebook"></i>
@@ -76,10 +73,10 @@
             let x = document.querySelector(".produkt-navbar")
             
             document.getElementById("ham").addEventListener("click", (e) =>{
-                if (x.className === "produktnavbar"){
+                if (x.className === "produkt-navbar"){
                     x.className += " responsive";
                 } else {
-                    x.className = "produktnavbar"
+                    x.className = "produkt-navbar"
                 }
             })
 

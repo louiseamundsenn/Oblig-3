@@ -12,6 +12,22 @@
     padding: 1rem;
 }
 
+.handlekurv-ikoner{ /*HANDLEKURVSIDEN*/
+    display: flex;
+    justify-content: right;
+    position: relative;
+    gap:0.5rem;
+    padding: 1rem 1rem 0rem 0rem;
+    color: rgb(205,193,178);
+}
+
+#arrow-left{
+    display: flex;
+    padding: 0rem 2rem;
+    color: rgb(205,193,178);
+    font-size: 1.5rem;
+}
+
 header nav div{ /*FORSIDEN OG PRODUKTSIDEN*/
     display: flex;
     justify-content: right;
@@ -19,6 +35,10 @@ header nav div{ /*FORSIDEN OG PRODUKTSIDEN*/
     gap: 0.5rem;
     padding: 1rem 1rem 0rem 0;
     color: rgb(205,193,178);
+}
+.handlekurv-navbar{
+    display: none;
+    text-decoration: none;
 }
 
 .produkt-navbar{ /*PRODUKTSIDE*/
@@ -37,6 +57,16 @@ header nav div{ /*FORSIDEN OG PRODUKTSIDEN*/
 header nav p{ /*PRODUKTSIDE*/
     color: rgb(205,193,178);
     text-decoration-line: underline;
+}
+
+header nav label{ /*PRODUKTSIDE*/
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav label input{ /*PRODUKTSIDE*/
+    width: 320px;
+    background-color: rgba(226, 219, 211, 0.775);
 }
 
 .navbar{ /*FORSIDEN*/
@@ -64,19 +94,26 @@ header nav p{ /*PRODUKTSIDE*/
 h1{ /*PRODUKTSIDEN*/
     color: rgb(205,193,178);
     text-decoration-line: underline;
+    padding: 0rem 1rem;
+    margin: 1rem 0rem 0rem;
+}
+
+.filter-knapp{ /*PRODUKTSIDE*/
+    display: flex;
+    justify-content: right;
+    padding: 0rem 1rem 0rem 0rem;
 }
 
 header div a{ /*PRODUKTSIDE*/
-    background-color: rgb(11, 19, 19);
-    color: rgb(205,193,178);
+    background-color: rgb(205,193,178);
+    color: rgb(61, 54, 43);
     text-decoration: none;
-    border-radius: 50%;
+    border-radius: 15%;
 }
 
-.pynt-produktside{
-    background-color: aqua;
+.pynt-produktside{ /*PRODUKTSIDE*/
+    background-color: rgb(205,193,178);
 }
-
 
 main{ /*ALLE SIDENE*/
     width: 100%;
@@ -100,22 +137,49 @@ article{ /*USIKKER*/
     height: auto;
 }
 
-.produkter{
+.produkter-1{ /*PRODUKTSIDE*/
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
 }
 
-.produktside-article{
+.produkter-2{ /*PRODUKTSIDE*/
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.produktside-article{ /*PRODUKTSIDE*/
     width: 50%;
     text-align: center;
 
 }
 
-.produktside-bilder{
+.produktside-bilder{ /*PRODUKTSIDE*/
     max-width: 100%;
     height: auto;
     width: 90%;
+}
+
+.handlekurv{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(205,193,178);
+}
+
+.handlekurv-article{
+    display: flex;
+    padding: 1rem;
+}
+
+.handlekurv-p{
+    padding: 1rem;
+}
+
+.handlekurv-bilder{
+    max-width: 100%;
+    height: auto;
+    width: 30%;
 }
 
 
@@ -130,12 +194,18 @@ article{ /*USIKKER*/
 main section h3{ /*FORSIDEN*/
     display: flex;
     justify-content: center;
-    color:rgb(205,193,178);
+    color:rgb(61, 54, 43);
+    padding: 1rem 2rem 0rem;
+    text-align: center;
 }
 
 main section article h3{
     display: flex;
     flex
+}
+
+main section article p{
+    color: rgb(61, 54, 43);
 }
 
 .read-more-btn{ /*ALLE SIDENE*/
@@ -159,6 +229,32 @@ main div{ /*FORSIDEN*/
     display: flex;
     flex-direction: row;
     justify-content: center;
+    padding: 4rem 4rem 0rem;
+}
+
+main aside{
+    background-color: rgb(205,193,178);
+    padding: 0rem 0rem 1rem;
+    margin: 1rem 0rem 0rem;
+}
+
+main aside h3{
+    display: flex;
+    background-color: rgba(242, 238, 233, 0.500);
+    color: rgb(70, 59, 46);
+    justify-content: center;
+    padding: 1rem;
+}
+
+
+.black-btn{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    padding: 1rem;
+    color: rgba(255, 166, 0, 0.758);
+    background-color: rgba(242, 238, 233, 0.500);
+    border-radius: 100px;
 }
 
 footer{ /*ALLE SIDENE*/

@@ -2,15 +2,18 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: rgb(61, 54, 43);
+}
+
 #grid-container{ /*ALLE SIDENE*/
     display: grid;
-    grid-template-areas: "header header header"
-                        "main main main"
-                        "footer footer footer";
+    grid-template-areas: "header"
+                        "main"
+                        "footer";
     grid-row-gap: 10px;
     grid-column-gap: 10px;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0fr 3fr 1fr;
+    grid-template-rows: 0fr 3fr 0fr;
 }
 
 
@@ -221,14 +224,14 @@ article{ /*USIKKER*/
 main section h3{ /*FORSIDEN*/
     display: flex;
     justify-content: center;
-    color:rgb(61, 54, 43);
+    color:rgb(205,193,178);
     padding: 1rem 2rem 0rem;
     text-align: center;
 }
 
 main section article h3{
     display: flex;
-    flex
+    color:rgb(61, 54, 43);
 }
 
 main section article p{
@@ -295,6 +298,17 @@ footer{ /*ALLE SIDENE*/
 
 
 @media only screen and (min-width:600px){
+
+        #grid-container{ /*ALLE SIDENE*/
+            display: grid;
+            grid-template-areas: "header header header"
+                                "main main main"
+                                "footer footer footer";
+            grid-row-gap: 10px;
+            grid-column-gap: 10px;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 0fr 6fr 1fr;
+         }
 
         #ham{ /*FORSIDE OG PRODUKTSIDE*/
             display: none;
@@ -370,6 +384,8 @@ footer{ /*ALLE SIDENE*/
             margin: 0rem 0rem 1rem;
             border-radius: 50px;
         }
+
+       
 
 }
 

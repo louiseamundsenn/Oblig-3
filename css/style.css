@@ -1,3 +1,4 @@
+
 *{
     box-sizing: border-box;
 }
@@ -7,6 +8,7 @@ body{
 }
 
 #grid-container{ /*ALLE SIDENE*/
+    /* inspirasjon for css for grid er hentet fra webstricks https://lms.webtricks.blog/kurs/webutvikling/css-grid/grid-container*/
     display: grid;
     grid-template-areas: "header"
                         "main"
@@ -141,9 +143,7 @@ header div a{ /*PRODUKTSIDE*/
     padding: 0.2rem;
 }
 
-.pynt-produktside{ /*PRODUKTSIDE*/
-    background-color: rgb(205,193,178);
-}
+
 
 main{ /*ALLE SIDENE*/
     width: 100%;
@@ -164,7 +164,8 @@ article{ /*USIKKER*/
 
 .forside-bilder{ /*FORSIDEN*/
     max-width: 100%;
-    height: auto;
+    height: 80%;
+    width: 100%;
 }
 
 .produkter-1{ /*PRODUKTSIDE*/
@@ -173,22 +174,20 @@ article{ /*USIKKER*/
     flex-direction: row;
 }
 
-.produkter-2{ /*PRODUKTSIDE*/
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
+
 
 .produktside-article{ /*PRODUKTSIDE*/
-    width: 50%;
+    width: 100%;
     text-align: center;
-
+    padding: 3rem;
+    background-color: rgb(205,193,178);
+    margin: 2rem;
 }
 
 .produktside-bilder{ /*PRODUKTSIDE*/
     max-width: 100%;
-    height: auto;
-    width: 90%;
+    height: 70%;
+    width: 80%;
 }
 
 .handlekurv{
@@ -232,10 +231,16 @@ main section h3{ /*FORSIDEN*/
 main section article h3{
     display: flex;
     color:rgb(61, 54, 43);
+    padding: 0rem 1rem 0rem;
+    font-size: 16px;
+    margin: 0.5rem;
 }
 
 main section article p{
     color: rgb(61, 54, 43);
+    padding: 0;
+    margin: 0;
+
 }
 
 .read-more-btn{ /*ALLE SIDENE*/
@@ -251,7 +256,7 @@ main section article p{
 
 .some-bilder{ /*FORSIDEN*/
     max-width: 100%;
-    height: auto;
+    height: 80%;
     width: 100%;
 }
 
@@ -274,6 +279,15 @@ main aside h3{ /*HANDLEKURV*/
     color: rgb(70, 59, 46);
     justify-content: center;
     padding: 1rem;
+}
+
+table{ /* table og td css er hentet fra w3schools https://www.w3schools.com/css/css_table.asp*/
+    border-collapse: collapse; 
+    
+}
+
+td{
+    border-bottom: 1px solid #ddd;
 }
 
 
@@ -299,15 +313,16 @@ footer{ /*ALLE SIDENE*/
 
 @media only screen and (min-width:600px){
 
-        #grid-container{ /*ALLE SIDENE*/
+    /*css for grid er hentet fra webtricks https://lms.webtricks.blog/kurs/webutvikling/css-grid/grid-container*/
+        #grid-container{ /*ALLE SIDENE*/ 
             display: grid;
             grid-template-areas: "header header header"
                                 "main main main"
                                 "footer footer footer";
             grid-row-gap: 10px;
             grid-column-gap: 10px;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: 0fr 6fr 1fr;
+            grid-template-columns: 0fr 3fr 0fr;
+            grid-template-rows: 1fr 6fr 1fr;
          }
 
         #ham{ /*FORSIDE OG PRODUKTSIDE*/
@@ -385,341 +400,7 @@ footer{ /*ALLE SIDENE*/
             border-radius: 50px;
         }
 
-       
-
+        main aside{
+            display: grid;
+        }
 }
-
-
-
-
-/*
-body{ /*FORSIDEN
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(61, 54, 43);
-    max-width: 900px;
-    width: 100%;
-    margin: 0 auto;
-}
-
-#grid-container{
-    display: grid;
-    grid-template-areas: "header" "main" "section" "section" "footer";
-}
-
-header, main, footer{
-    padding: 1rem;
-}
-
-#logo{
-    display: flex;
-    text-decoration: none; /*får vekk understre
-    justify-content: center;
-    font-size: calc(1.5em + 1.5vw);
-    font-weight: 500;
-    
-    /*tykkelsen på skriften
-    color:rgb(205,193,178);
-}
-
-
-header{
-    color:rgb(205,193,178);
-
-}
-
-header div{ /* denne tilhører handlekurv siden
-    display: flex;
-    justify-content: right;
-    position: relative;
-    gap: 0.5rem;
-    padding: 1rem 1rem 0rem 0;
-}
-
-header nav div{ /*ikonene i høyre hjørne
-    display: flex;
-    justify-content: right;
-    position: relative;
-    gap: 0.5rem;
-    padding: 1rem 1rem 0rem 0;
-}
-
-#ham{
-    display: flex;
-    justify-content: left;
-    font-size: calc(1.5em + 1.5vw);
-    padding: 0rem 0rem 0rem 1rem;
-}
-
-header nav ul{ /*home products about
-    list-style-type: none; /*tar vekk punktene i listen
-    display: none;
-    text-decoration: none;
-}
-
-header nav a{
-    display: flex;
-    justify-content: space-between;
-    text-transform: uppercase; /*store bokstaver
-    color:rgb(205,193,178);
-} 
-
-.navbar{
-    display: none;
-    text-decoration: none;
-}
-
-
-.responsive{
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    background-color: #a89e9e;
-    top: 98px;
-    width:100%;
-    list-style: none;
-    padding: 0;
-}
-
-.responsive a{
-    color: #fff;
-    display: inline-block;
-    text-decoration: none;
-    padding:1rem;
-}
-
-h1{
-    color: rgb(205,193,178);
-}
-
-main{
-    grid-area: main;
-    padding: 0rem 0rem 1rem 0rem;
-
-}
-
-/*.flex-con{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding: 2rem 6rem 0rem 6rem;
-}*/
-
-/*main section article img{
-   display: flex;
-   width:32%;
-   height: 180px;  
-}
-
-
-.read-btn{
-    display: flex;
-    color: rgb(205,193,178);
-    text-decoration: none;
-   
-}
-
-.read-more-btn{
-    display: flex;
-    background-color:rgb(205,193,178);
-    color:rgb(70, 59, 46);
-    text-decoration: none;
-    justify-content: center;
-    padding: 2rem;
-    margin: 0rem 4rem 4rem;
-}
-
-
-
-
-section h3{
-    display: flex;
-    justify-content: center;
-    color:rgb(205,193,178);
-}
-
-section img{
-    display: flex;
-    justify-content:space-around;
-    width: 200px;
-}
-
-
-main aside{
-    background-color:rgb(205,193,178);
-}
-
-aside{
-    display: flex;
-    justify-content: center;
-}
-
-aside h3{
-    display: flex;
-    justify-content: center;
-}
-
-.black-btn{
-    display: flex;
-    justify-content: center;
-    text-decoration: none;
-    color: rgb(61, 54, 43);
-    background-color:rgb(203, 160, 106);
-    padding: 1.5rem;
-}
-
-
-.svarte-boots{ /*bilde over footer
-    
-    width:120px;
-    position: absolute;
-    left: 85px;
-    top: 1000px;
-    height: 213px;
-}
-
-.catwalk{ /*bilde over footer
-   
-    width: 120px;
-    position: absolute;
-    left: 218px;
-    top: 1000px;
-}
-
-.hvit-sneakers-bil{
-   
-    width: 120px;
-    position: absolute;
-    left: 350px;
-    top: 1000px;
-}
-
-.bella{
-   
-    width: 120px;
-    position: absolute;
-    left: 480px;
-    top: 1000px;
-}
-
-.ugg-tasman{
-    
-    width: 120px;
-    position: absolute;
-    left: 615px;
-    top: 1000px;
-    height: 213px;
-}
-
-footer{
-    display: flex;
-    color:rgb(205,193,178);
-    justify-content: center;
-    gap: 1.5rem;
-    font-size: calc(1.5em + 1.5vw);
-}
-
-
-@media only screen and (min-width:600px){
-
-    #grid-container{
-        grid-template-areas: "header" "main" "footer";
-    }
-
-    #logo{
-        font-size: 100px;
-        padding: 3rem;
-    }
-
-    header nav div{
-        font-size: xx-large;
-    }
-
-
-    .navbar{
-        display: flex;
-        text-decoration: none;
-        flex-direction: row;
-        gap: 2rem;
-        justify-content: center;
-        font-size: calc(1em + 1vw);
-    }
-
-    #ham, .fa-magnifying-glass{
-        display: none;
-    }
-
-    .flex-section{
-        display: flex;
-        justify-content: left;
-        width: 35%;
-    }
-
-    .flex-container{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-    
-    main{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        width: 100%;
-        padding: 2rem;
-        margin: 1rem;
-    }
-
-
-    main section article img{
-        display: flex;
-        width:large;
-        height: max-content;
-    }
-
-    main section article a{
-        display: flex;
-        font-size: 85px;
-        font-weight: 500;
-    }
-
-    section h3{
-        display: flex;
-        font-size: 70px;
-        font-weight: normal;
-    }
-
-    .read-more-btn{
-        display: flex;
-        font-size:110px;
-    }
-
-    aside{
-        display: flex;
-        text-decoration: none;
-        justify-content: center;
-        background-color: rgb(205,193,178);
-        padding: 5rem;
-
-    }
-
-    aside h3{
-        display: flex;
-        justify-content: center;
-        position: absolute;
-        top: 1150px;
-    }
-
-    aside p{
-        display: flex;
-        justify-content: left;
-    }
-
-    aside a{
-        display: flex;
-        justify-content: center;
-        position: absolute;
-        top: 1288px;
-    }
-
-}
-*/

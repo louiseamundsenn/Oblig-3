@@ -309,6 +309,44 @@ footer{ /*ALLE SIDENE*/
     font-size: calc(1.5em + 1.5vw);
 }
 
+.analyse-p{
+    color: rgb(205,193,178);
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+    color:rgb(205,193,178);
+    padding: 1rem 2rem 0rem;
+    text-align: center;
+}
+
+.overskrift{
+    color: rgb(205,193,178);
+    justify-content: left;
+}
+
+
+h4{
+    color: rgb(205,193,178);
+}
+
+h6{
+    color: rgb(205,193,178);
+}
+
+.analyse-bilder{
+    max-width: 30%;
+    height: 20%;
+    width: 50%;
+}
+.analyse-table{
+    background-color: #fff;
+}
+
+.liste{
+    color: rgb(205,193,178);
+}
 
 
 @media only screen and (min-width:600px){

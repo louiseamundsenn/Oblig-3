@@ -86,7 +86,7 @@ header nav div{ /*FORSIDEN OG PRODUKTSIDEN*/
 
 header nav p{ /*PRODUKTSIDE*/
     color: rgb(205,193,178);
-    text-decoration-line: underline;
+    text-decoration-line: none;
 }
 
 header nav label{ /*PRODUKTSIDE*/
@@ -220,15 +220,16 @@ article{ /*USIKKER*/
     
 }
 
-main section h3{ /*FORSIDEN*/
+main section h1{ /*FORSIDEN*/
     display: flex;
     justify-content: center;
     color:rgb(205,193,178);
     padding: 1rem 2rem 0rem;
     text-align: center;
+    text-decoration: none;
 }
 
-main section article h3{
+main section article h2{
     display: flex;
     color:rgb(61, 54, 43);
     padding: 0rem 1rem 0rem;
@@ -273,7 +274,7 @@ main aside{ /*HANDLEKURV*/
     margin: 1rem 0rem 0rem;
 }
 
-main aside h3{ /*HANDLEKURV*/
+main aside h2{ /*HANDLEKURV*/
     display: flex;
     background-color: rgba(242, 238, 233, 0.500);
     color: rgb(70, 59, 46);
@@ -345,6 +346,14 @@ h6{
 }
 
 .liste{
+    color: rgb(205,193,178);
+}
+
+section p{
+    color: rgb(205,193,178);
+}
+
+.p-resultater{
     color: rgb(205,193,178);
 }
 

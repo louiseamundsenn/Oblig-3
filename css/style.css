@@ -124,7 +124,7 @@ header nav label input{ /*PRODUKTSIDE*/
 
 h1{ /*PRODUKTSIDEN*/
     color: rgb(205,193,178);
-    text-decoration-line: underline;
+    text-decoration-line: none;
     padding: 0rem 1rem;
     margin: 1rem 0rem 0rem;
 }
@@ -326,6 +326,8 @@ h2{
     color: rgb(205,193,178);
     justify-content: left;
 }
+
+
 
 
 h4{

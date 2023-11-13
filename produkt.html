@@ -1,23 +1,34 @@
 <!doctype html>
 <html lang="en">
     <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Louise Amundsen">
         <meta name="viewport" content="width=device-width, initial-scale=1.0 ">
         <meta name="description" content="produkside til skobutikk">
-        <meta charset="utf-8">
+        <meta name="keywords" content="sko, boots, sneakers, tøfler,">
+        <!--metadata for some start-->
+        <!--kikde https://developers.facebook.com/docs/sharing/webmasters/#markup-->
+        <meta property="og:title" content="Disse Bootsene trenger du i vinter!">
+        <meta property="og:description" content="Finn de perfekte skoene du trenger for å holde deg varm og komfertabel hele vinteren">
+        <meta property="og:image" content="https://i.pinimg.com/564x/05/9d/b7/059db7b7bea9336577566ffb4873607e.jpg"> <!--tok et passende bilde fra pinterest for å simulere at det er en del av nettsiden og "annonsen" som vises på SOME-->
+        <meta propert="og:url" content="https://chico.no/produkter"> <!--lagt inn en ikke fungerende url for å simulere at det skal være en link til min nettbutikk -->
+        <!--metadata for some slutt-->
         <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
         <link href="css/font/css/fontawesome.css" rel="stylesheet">
         <link href="css/font/css/brands.css" rel="stylesheet">
         <link href="css/font/css/solid.css" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css" type="text/css">
-        <title> Produkside </title>
+        <title> Produkter </title>
     </head>
     <body>
+        <!--skip til hovedinnhold kilde https://www.uutilsynet.no/veiledning/tastaturnavigasjon/37#snarvei_for__hoppe_til_hovedinnholdet-->
+        <a href="#hovedinnhold" class="snarvei" id="skip">Hopp til hovedinnholdet</a>
         <div id="grid-container">
-            <header>
+            <header role="banner">
                 <span>
                     <a href="index.html" id="logo">CHICO</a> <!--Logo-->
                 </span>
-                <nav>
+                <nav role="navigation">
                     <div>
                         <i class="fa-solid fa-magnifying-glass"></i>
                         <i class="fa-solid fa-cart-shopping"></i>
@@ -33,46 +44,67 @@
                         <li><a href="analyse.html">ANALYSE</a></li>
                     </ul>
                     <p>Hjem/Produkter</p>
-                    <form>
-                        <label>
-                            <input type="text" id="søk" name="søkebar">
-                        </label>
-                    </form>
+                    <label>
+                      Søk
+                      <input type="text" id="søk"  placeholder="søkebar">
+                    </label>
                 </nav>
                 <h1>Produkter</h1>
                 <div class="filter-knapp">
                     <a href="#" class="filter-btn">Filter</a>
                 </div>
             </header>
-            <main class="pynt-produktside">
+            <main role="main" class="pynt-produktside">
+                <section id="hovedinnhold" tabindex="-1">
                 <section class="produkter-1">
-                    <article class="produktside-article">
-                        <img src="img/hvit-boot.jpg" alt="hvite boots forran hvit vegg" class="produktside-bilder">
+                    <article itemscope itemtype="https://schema.org/Product" class="produktside-article">
+                        <img itemprop="image" src="img/hvit-boot.jpg" alt="hvite boots forran hvit vegg" class="produktside-bilder">
                         <!--https://no.pinterest.com/pin/15692298693976891/-->
-                        <h2>Celia fold over boot</h2>
-                        <p>1899,-</p>
+                        <h2 class="navn-sko" itemprop="name">Celia fold over boot</h2>
+                        <p itemprop="price" content="1899.00" class="navn-sko">1899,-</p>
+                        <meta itemprop="position" content="1">
+                        <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/aggregateRating">
+                            <meta itemprop="reviewCount" content="100">
+                            <meta itemprop="ratingValue" content="5">
+                        </div>
                     </article>
-                    <article class="produktside-article">
-                        <img src="img/brun-boot.jpg" alt="brun boot på catwalk" class="produktside-bilder">
+                    <article itemscope itemtype="https://schema.org/Product" class="produktside-article">
+                        <img itemprop="image" src="img/brun-boot.jpg" alt="brun boot på catwalk" class="produktside-bilder">
                         <!--https://no.pinterest.com/pin/22447698134968189/-->
-                        <h2>Jenny buckle boot</h2>
-                        <p>2499,-</p>
+                        <h2 class="navn-sko" itemprop="name">Jenny buckle boot</h2>
+                        <p itemprop="price" content="2499.00" class="navn-sko">2499,-</p>
+                        <meta itemprop="position" content="2">
+                        <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/aggregateRating">
+                            <meta itemprop="reviewCount" content="110">
+                            <meta itemprop="ratingValue" content="4.5">
+                        </div>
                     </article>
-                    <article class="produktside-article">
-                        <img src="img/to-brune-boots.jpg" alt="to brune boots" class="produktside-bilder">
+                    <article itemscope itemtype="https://schema.org/Product" class="produktside-article">
+                        <img itemprop="image" src="img/to-brune-boots.jpg" alt="to brune boots" class="produktside-bilder">
                         <!--https://no.pinterest.com/pin/19281104647956591/-->
-                        <h2>Mie knee hight boot</h2>
-                        <p>1999,-</p>
-                    </article>
-                    <article class="produktside-article">
-                        <img src="img/svarte-boots.jpg" alt="to svarte boots forran en vegg" class="produktside-bilder">
+                        <h2 class="navn-sko" itemprop="name">Mie knee hight boot</h2>
+                        <p itemprop="price" content="1999.00" class="navn-sko">1999,-</p>
+                        <meta itemprop="position" content="3">
+                        <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/aggregateRating">
+                            <meta itemprop="reviewCount" content="100">
+                            <meta itemprop="ratingValue" content="5">
+                        </div>
+                    </article>¢
+                    <article itemscope itemtype="https://schema.org/Product" class="produktside-article">
+                        <img itemprop="image" src="img/svarte-boots.jpg" alt="to svarte boots forran en vegg" class="produktside-bilder">
                         <!--https://no.pinterest.com/pin/53972895527183555/-->
-                        <h2>Mary JC  boot</h2>
-                        <p>2699,-</p>
+                        <h2 classs="navn-sko" itemprop="name">Mary JC  boot</h2>
+                        <p itemprop="price" content="2699.00" class="navn-sko"> 2699,-</p>
+                        <meta itemprop="position" content="4">
+                        <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/aggregateRating">
+                            <meta itemprop="reviewCount" content="100">
+                            <meta itemprop="ratingValue" content="4.8">
+                        </div>
                     </article>
                 </section>
+                </section>
             </main>
-            <footer> 
+            <footer role="contentinfo"> 
                     <i class="fa-brands fa-facebook"></i>
                     <i class="fa-brands fa-instagram"></i> 
             </footer>

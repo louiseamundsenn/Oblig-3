@@ -1,20 +1,32 @@
 <!doctype html>
 <html lang="nb">
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="forside til skobutikk">
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Louise Amundsen">
+        <meta name="description" content="forside til nettbutikk for damesko">
+        <meta name="keywords" content="sko, boots, sneakers, tøfler,">
+        <!--metadata for instagram start-->
+        <!--kilde https://developers.facebook.com/docs/sharing/webmasters/#markup-->
+        <meta property="og:title" content="De perfekte skoene for vinteren">
+        <meta property="og:description" content="Finn de perfekte skoene du trenger for å holde deg varm og fashionable i julen">
+        <meta property="og:image" content="https://no.pinterest.com/pin/108649409753824873/"> <!--tok et passende bilde fra pinterest for å simulere at det er en del av nettsiden og "annonsen" som vises på SOME-->
+        <meta propert="og:url" content="https://chico.no"> <!--lagt inn en ikke fungerende url for å simulere at det skal være en link til min nettbutikk -->
+        <!--metadata for instagram slutt-->
         <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
         <link href="css/font/css/fontawesome.css" rel="stylesheet">
         <link href="css/font/css/brands.css" rel="stylesheet">
         <link href="css/font/css/solid.css" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css" type="text/css">
-        <title>Forside</title>
+        <title>CHICO Damesko</title>
     </head>
     <body>
+        <!--skip til hovedinnhold kilde https://www.uutilsynet.no/veiledning/tastaturnavigasjon/37#snarvei_for__hoppe_til_hovedinnholde -->
+        <a href="#hovedinnhold" class="snarvei" id="skip">Hopp til hovedinnholdet</a>
         <div id="grid-container">
-        <header>
-                <nav>
+        <!--aria attributter kilde http://mcdlr.com/wai-aria-cheatsheet/-->
+        <header role="banner">
+                <nav role="navigation">
                     <a href="#" id="logo">CHICO</a> <!--Logo-->
                     <div> 
                         <i class="fa-solid fa-magnifying-glass"></i>
@@ -33,7 +45,8 @@
                 </nav>
                 <i id="ham" class="fa-solid fa-bars"></i>
         </header>
-        <main>
+        <main role="main">
+        <section id="hovedinnhold" tabindex="-1">
             <section class="flex-container">
                 <article>
                     <img src="img/boots-hvit-vegg.jpg" alt="boots med hvit bakgrunn" class="forside-bilder">
@@ -78,8 +91,9 @@
                     <!--https://no.pinterest.com/pin/406379566387078228/-->
                 </section>
             </div>
+        </section>
         </main>
-        <footer>
+        <footer role="contentinfo">
             <i class="fa-brands fa-facebook"></i>
             <i class="fa-brands fa-instagram"></i>           
         </footer>

@@ -8,8 +8,8 @@
     </head>
     <body>
         <header>
-            <nav class="navbar">
-                <li><a href="index.html">FORSIDE</a></li>
+            <nav class="navbar-analyse">
+                <li class="nav-li"><a href="index.html">FORSIDE</a></li>
                 <li><a href="produkt.html">PRODUKTER</a></li>
                 <li><a href="handlekurv.html">HANDLEKURV</a></li>
             </nav>
@@ -84,8 +84,8 @@
                 <h2>SEO Analyse Lighthouse</h2>
                 <article>
                     <h4>Forside, Produtside og Handlekurv</h4>
-                    <img src="img/seo-analyse.png" alt="SEO analyse av alle sidene" class="analyse-bilder">
-                    <p class="analyse-p">Ovenfor ser vi et screenshot fra SEO analysen i lighthouse. SEO analysen viste det samme problemet på alle sidene mine. problemet var at jeg ikke har en "meta description" tagg og gjelder for både mobil og desktop.</p>
+                    <p class="analyse-p">Nedenfor ser vi et screenshot fra SEO analysen i lighthouse. SEO analysen viste det samme problemet på alle sidene mine. problemet var at jeg ikke har en "meta description" tagg og gjelder for både mobil og desktop.</p>
+                    <img src="img/seo-analyse.png" alt="SEO analyse av alle sidene" class="analyse-bilder-seo">
                 </article>
             </section>
             <section>
@@ -101,7 +101,7 @@
                         Den siste alerten jeg fikk er at jeg har 3 "Redundant link". 
                         Det er fordi jeg har lenket samme side (produkt.html) til både "BOOTS", "SNEAKERS" og "TØFLER" bildene mine på forsiden slik at hvis du trykker på de blir de sendt til produktsiden. 
                     </p>
-                    <img src="img/webaim-1-1.png" alt="analyse fra webaim" class="analyse-bilder">
+                    <img src="img/webaim-1-1.png" alt="analyse fra webaim" class="analyse-webaim">
                 </article>
                 <article>
                     <h4>Produktside</h4>
@@ -114,7 +114,7 @@
                         Den andre alerten jeg fikk var "redundant link" som kommer opp ved siden av "HJEM" i navigasjonsbaren øverst på siden. 
                         Og den siste alerten er "underline text" som kommer opp ved brødsmule stien min som har en understrek.
                     </p>
-                    <img src="img/webaim-2-1.png" alt="analyse fra webaim" class="analyse-bilder">
+                    <img src="img/webaim-2-1.png" alt="analyse fra webaim" class="analyse-webaim">
                 </article>
                 <article>
                     <h4>Handlekurv</h4>
@@ -126,7 +126,7 @@
                         Og til slutt "layout table" som kommer opp i ordre oversikten på den første raden. 
                         Det tror jeg er forsi jeg ikke har en "th" tagg før "td" taggene.
                     </p>
-                    <img src="img/webaim-3-1.png" alt="analyse fra webaim" class="analyse-bilder">
+                    <img src="img/webaim-3-1.png" alt="analyse fra webaim" class="analyse-webaim">
                 </article>
             </section>
             <section>
@@ -134,21 +134,21 @@
                 <h3 class="overskrift">SEO</h3>
                 <p class="analyse-p">Dette er resultatene og løsningene jeg fikk når jeg kopierte og limte inn all koden i Chatgpt og ba den om å vurdere det utifra et SEO perspektiv.</p>
                 <article>
-                    <h4>Forside</h4>
+                    <h4 class="chatgpt-padding">Forside</h4>
                     <p></p>
-                    <img src="img/chatgpt-seo-1.png" alt="resultater jeg fikk av chatgpt for å vurdere koden til forsiden min" class="analyse-bilder">
+                    <img src="img/chatgpt-seo-1.png" alt="resultater jeg fikk av chatgpt for å vurdere koden til forsiden min" class="analyse-bilder-seo">
                     <p class="analyse-p"></p>
                 </article>
                 <article>
                     <h4>Produktside</h4>
                     <p></p>
-                    <img src="img/chatgpt-seo-2.png" alt="resultater jeg fikk av chatgpt når jeg ba den om å vurdere koden til produktsiden" class="analyse-bilder">
+                    <img src="img/chatgpt-seo-2.png" alt="resultater jeg fikk av chatgpt når jeg ba den om å vurdere koden til produktsiden" class="analyse-bilder-seo">
                     <p></p>
                 </article>
                 <article>
                     <h4>Handlekurv</h4>
                     <p></p>
-                    <img src="img/chatgpt-seo-3.png" alt="resultater av chatgpt når den vurderte koden til handlekurv siden" class="analyse-bilder">
+                    <img src="img/chatgpt-seo-3.png" alt="resultater av chatgpt når den vurderte koden til handlekurv siden" class="analyse-bilder-seo">
                     <p></p>
                 </article>
             </section>
@@ -257,11 +257,11 @@
                     <h3 class="overskrift">SEO</h3>
                     <ul class="liste">
                         <li>Lagt inn en meta discription tagg i head på alle sidene mine</li>
-                        <img src="img/ny-meta-index.png" alt="bilde av koden som viser endringer i head, forsiden" class="analyse-bilder">
-                        <img src="img/ny-meta-tagg.png" alt="bilde av koden som viser endringer i head, produktsiden" class="analyse-bilder">
-                        <img src="img/ny-meta-handlekurv.png" alt="bilde av koden som visr endringer i head, handlekurvsiden" class="analyse-bilder">
+                        <img src="img/ny-meta-index.png" alt="bilde av koden som viser endringer i head, forsiden" class="analyse-bilder-seo">
+                        <img src="img/ny-meta-tagg.png" alt="bilde av koden som viser endringer i head, produktsiden" class="analyse-bilder-seo">
+                        <img src="img/ny-meta-handlekurv.png" alt="bilde av koden som visr endringer i head, handlekurvsiden" class="analyse-bilder-seo">
                         <li>Endret bilde beskrivelsen på alt-attributtene</li>
-                        <img src="img/ny-bildetekst.png" alt="bilde som viser endring i koden med mer bilde-tekst" class="analyse-bilder">
+                        <img src="img/ny-bildetekst.png" alt="bilde som viser endring i koden med mer bilde-tekst" class="analyse-bilder-seo">
                     </ul>
                 </article>
                 <article>
@@ -269,17 +269,17 @@
                     <p></p>
                     <ul class="liste">
                         <li>Tatt vekk understrek i brødsmulemenyen (css)</li>
-                        <img src="img/understrek-borte.png" alt="bilde som viser endringer i css" class="analyse-bilder">
+                        <img src="img/understrek-borte.png" alt="bilde som viser endringer i css" class="analyse-bilder-seo">
                         <li>Lagt på en "form" tagg utenpå "label" (produktsiden)</li>
-                        <img src="img/ny-form-label.png" alt="bilde som viser endringer i label-taggen" class="analyse-bilder">
+                        <img src="img/ny-form-label.png" alt="bilde som viser endringer i label-taggen" class="analyse-bilder-seo">
                         <li>Lagt til "th" tagg som manglet i "tabel" taggen på handlekurvsiden i ordre oversikten</li>
-                        <img src="img/th-i-table-handlekurv.png" alt="bilde som viser at jeg har gjort endringer i table" class="analyse-bilder">
+                        <img src="img/th-i-table-handlekurv.png" alt="bilde som viser at jeg har gjort endringer i table" class="analyse-bilder-seo">
                         <li>Lagt til first level heading (h1) på forsiden</li>
-                        <img src="img/ny-heading-level-forside.png" alt="bilde som viser at jeg har lagt til h1 på forsiden" class="analyse-bilder">
+                        <img src="img/ny-heading-level-forside.png" alt="bilde som viser at jeg har lagt til h1 på forsiden" class="analyse-bilder-seo">
                         <li>Endret H3 overskriftene til produktene til H2 slik at jeg fikk fikst opp i "skipped heading level"</li>
-                        <img src="img/ny-h2-produktside.png" alt="bilde som viser at jeg har endret h3 til h2" class="analyse-bilder">
+                        <img src="img/ny-h2-produktside.png" alt="bilde som viser at jeg har endret h3 til h2" class="analyse-bilder-seo">
                         <li>Endret H3 overskriften "ordre oversikt" til H2 slik at jeg fikk fikset opp i "skipped heading level"</li>
-                        <img src="img/h3-h2-handlekurv.png" alt="bilde som viser at jeg har endret h3 til h2, handlekurvside" class="analyse-bilder">
+                        <img src="img/h3-h2-handlekurv.png" alt="bilde som viser at jeg har endret h3 til h2, handlekurvside" class="analyse-bilder-seo">
                     </ul>
                 </article>
                 <article>
@@ -287,7 +287,7 @@
                     <p class="p-resultater">Forside</p>
                     <ul class="liste">
                         <li>Før (venstre) og etter (høyre) endringer</li>
-                        <img src="img/webaim-1-1.png" alt="bilde som viser resultater i webaim før endringer" class="analyse-bilder">
+                        <img src="img/webaim-1-1.png" alt="bilde som viser resultater i webaim før endringer" class="analyse-webaim">
                         <img src="img/webaim-ferdig-forside.png" alt="bilde som viser resultat av endringer i webaim, forside" class="analyse-bilder">
                         <li>Her ser vi at jeg fortsatt har 3x Redundant link. 
                             Jeg har valgt å ikke ta de vekk fordi jeg har lenket hver kattegori til produktsiden slik at man kan navigere seg via knappene.
@@ -297,19 +297,77 @@
                     <p class="p-resultater">Produktside</p>
                     <ul class="liste">
                         <li>Før (venstre) og etter (høyre) endringer</li>
-                        <img src="img/webaim-2-1.png" alt="bilde som viser resultater i webaim før endringer" class="analyse-bilder">
+                        <img src="img/webaim-2-1.png" alt="bilde som viser resultater i webaim før endringer" class="analyse-webaim">
                         <img src="" alt="" class="analyse-bilder">
                     </ul>
                     <p class="p-resultater">Handlekurvside</p>
                     <ul class="liste">
                         <li>Før (venstre) og etter (høyre) endringer</li>
-                        <img src="img/webaim-3-1.png" alt="bilde som viser resultater i webaim før endringer" class="analyse-bilder">
+                        <img src="img/webaim-3-1.png" alt="bilde som viser resultater i webaim før endringer" class="analyse-webaim">
                         <img src="img/webain-ferdig-handlekurv.png" alt="bilde som viser ferdig endringer" class="analyse-bilder">
                     </ul>
                 </article>
             </section>
             <section>
-                
+                <h2>Tilgjengelighet</h2>
+                <article>
+                    <h3 class="overskrift">Skjermleserkompatibilitet</h3>
+                    <p class="p-resultater">
+                        Forside:
+                        Jeg skrudde på skjermleseren på pc'en min og fikk lest opp innholdet på siden. 
+                        Jeg testet forsiden først og der ble alt på siden lest opp utenom ikoner og bilder.
+                    </p>
+                    <p class="p-resultater">
+                        Produktside:
+                        Når jeg kjørte skjermleseren på produktsiden klarte den å lse opp alt på siden.
+                    </p>
+                    <p class="p-resultater">
+                        Handlekurvside:
+                        Skjermleseren klarte også å lese opp atl på handlekurvsiden uten noe problemer.
+                    </p>
+                </article>
+                <article>
+                    <h3 class="overskrift">Tastaturnavigasjon</h3>
+                    <p class="p-resultater">
+                        Nettsiden min kan navigeres med pil opp og ned for å skrolle på tastaturet.
+                        Den kan også navigeres med tab tasten ved å trykke flere ganger for å komme seg videre.
+                        Under ser vi bilde av hva jeg skrev inn i koden for at skip to content skulle fungere.
+                    </p>
+                    <img src="img/skip-to-content-1.png" alt="bilde av skipt to content kode" class="analyse-bilder-seo">
+                    <img src="img/skipt-to-content-2.png" alt="bilde av skipt to content kode" class="analyse-bilder-seo">
+                   <p>Dette skrev jeg inn på alle sidene mine</p>
+                </article>
+                <article>
+                    <h3 class="overskrift">ARIA-attributter</h3>
+                    <p class="p-resultater">
+                        I bildene under ser vi hvilke aria attributter jeg har lagt inn på alle sidene mine. 
+                        Jeg syns det var litt vanskelig å finne informasjon om hvordan man skulle bruke det så jeg prøvde meg litt med disse.
+                        
+                    </p>
+                    <img src="img/aria-attributt-1.png" alt="" class="analyse-bilder">
+                    <img src="img/aria-attributes-2.png" alt="" class="analyse-bilder">
+                    <img src="img/aria-attributt-3.png" alt="" class="analyse-bilder">
+                </article>
+            </section>
+            <section>
+                <h2>Microdata og Rich Results</h2>
+                <p class="analyse-p">
+                    Under har jeg lagt til et bilde over microdataen jeg har lagt inn på produktsiden til nettsiden min.
+                    Koden med microdataen er validert og fungerer i google sin test for rike resultater.
+                </p>
+                <img src="img/microdata-prod.png" alt="bilde som viser html kode med microdata" class="analyse-bilder-seo">
+                <img src="img/rikeresultater-prod.png" alt="bilde som viser resultater av rike resultater test" class="analyse-bilder-seo">
+            </section>
+            <section>
+                <h2>Meta og SOME</h2>
+                <p class="analyse-p">
+                    Jeg har lagt inn og opptimalisert meta data på alle sidene mine. 
+                    Jeg har oppdatert titel tags og lagt inn keywords som er relevant til siden min.
+                    Jeg har også lagt inn metadata for SOME.
+                </p>
+                <img src="img/meta-index.png" alt="bilde som viser ny metadata og some" class="analyse-bilder-seo">
+                <img src="img/meta-prod.png" alt="bilde som viser ny metadata og some" class="analyse-bilder-seo">
+                <img src="img/meta-handle.png" alt="bilde som viser ny metadata og some" class="analyse-bilder-seo">
             </section>
         </main>
     </body>

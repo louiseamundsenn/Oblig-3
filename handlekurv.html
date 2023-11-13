@@ -1,19 +1,30 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="handlekurvsiden til skobutikk">
         <meta charset="utf-8">
+        <meta name="author" content="Louise Amundsen">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0 ">
+        <meta name="description" content="handlelkurv siden til skobutikk">
+        <meta name="keywords" content="sko, boots, sneakers, tøfler,">
+        <!--metadata for some start-->
+        <!--kilde https://developers.facebook.com/docs/sharing/webmasters/#markup-->
+        <meta property="og:title" content="Must haves du trenger i sko garderoben!">
+        <meta property="og:description" content="Her ser du noen av våre must haves for vinteren og hvor lett du kan klikke det hjem til deg!">
+        <meta property="og:image" content="https://no.pinterest.com/pin/53972895527183555/"> <!--tok et passende bilde jeg har på nettsiden for å simulere at det er en del av nettsiden og "annonsen" som vises på SOME-->
+        <meta propert="og:url" content="https://chico.no/handlekurv"> <!--lagt inn en ikke fungerende url for å simulere at det skal være en link til min nettbutikk -->
+        <!--metadata for some slutt-->
         <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
         <link href="css/font/css/fontawesome.css" rel="stylesheet">
         <link href="css/font/css/brands.css" rel="stylesheet">
         <link href="css/font/css/solid.css" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css" type="text/css">
-        <title> Hanlekurv </title>
+        <title> Handlekurv </title>
     </head>
     <body>
+        <!--skip til hovedinnhold kilde https://www.uutilsynet.no/veiledning/tastaturnavigasjon/37#snarvei_for__hoppe_til_hovedinnholdet-->
+        <a href="#hovedinnhold" class="snarvei" id="skip">Hopp til hovedinnholdet</a>
         <div id="grid-container">
-        <header>
+        <header role="banner">
                <span>
                  <a href="index.html" id="logo">CHICO</a> <!--Logo-->
                </span>
@@ -34,7 +45,8 @@
                </nav>
                <h1>Handlekurv</h1>
         </header>
-        <main>
+        <main role="main">
+            <section id="hovedinnhold" tabindex="-1">
             <section class="handlekurv">
                 <article class="handlekurv-article">
                     <img src="img/brun-boot.jpg" alt="bilde av en brun boots på catwalk" class="handlekurv-bilder">
@@ -74,8 +86,9 @@
                 </table>
                 <a href="#" class="black-btn">Til kassen</a>
             </aside>
+            </section>
         </main>
-        <footer>
+        <footer role="contentinfo">
                 <i class="fa-brands fa-facebook"></i>
                 <i class="fa-brands fa-instagram"></i> 
         </footer>

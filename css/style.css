@@ -98,6 +98,15 @@ header nav label input{ /*PRODUKTSIDE*/
     width: 320px;
     background-color: rgba(226, 219, 211, 0.775);
     border-radius: 50px;
+    color: black;
+}
+
+::placeholder {
+    color: black;
+}
+
+#skip{
+    color: white;
 }
 
 .navbar{ /*FORSIDEN*/
@@ -310,28 +319,55 @@ footer{ /*ALLE SIDENE*/
     font-size: calc(1.5em + 1.5vw);
 }
 
+.navbar-analyse{
+    color: rgb(253, 253, 253);
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 1rem 1rem 1rem 0rem;
+}
+
 .analyse-p{
     color: rgb(205,193,178);
+    font-size: 20px;
+    padding: 1rem 0rem 1rem 0rem;
+}
+
+
+header nav li a{
+    color: rgb(205,193,178);
+    text-decoration: none;
 }
 
 h2{
     display: flex;
     justify-content: center;
     color:rgb(205,193,178);
-    padding: 1rem 2rem 0rem;
+    padding: 4rem 0rem 0rem;
     text-align: center;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+.navn-sko{
+    color: black;
+    text-decoration: none;
 }
 
 .overskrift{
     color: rgb(205,193,178);
     justify-content: left;
+    padding: 3rem 0rem 0rem;
+    font-size: 25px;
+    
 }
-
-
 
 
 h4{
     color: rgb(205,193,178);
+    font-size: 20px;
+    padding: 4rem 0rem 0rem;
+    margin: 4rem 0rem 0rem;
 }
 
 h6{
@@ -343,6 +379,20 @@ h6{
     height: 20%;
     width: 50%;
 }
+
+.analyse-webaim{
+    max-width: 20%;
+    height: 10%;
+    width: 40%;
+}
+
+.analyse-bilder-seo{
+    max-width: 50%;
+    height: 30%;
+    width: 80%;
+    padding: 0rem 0rem 3rem;
+}
+
 .analyse-table{
     background-color: #fff;
 }
@@ -357,7 +407,27 @@ section p{
 
 .p-resultater{
     color: rgb(205,193,178);
+    font-size: 20px;
+    padding: 1rem 0rem 1rem 0rem;
 }
+
+.snarvei{
+    position: absolute;
+    left:-2000px;
+    top: 0px;
+}
+
+.snarvei:focus{
+    left:0px;
+}
+
+.chatgpt-padding{
+    padding: 1rem 0rem 0rem 0rem;
+}
+
+
+
+
 
 
 @media only screen and (min-width:600px){
